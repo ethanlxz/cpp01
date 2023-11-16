@@ -35,7 +35,6 @@ void Harl::error()
 void Harl::complain(std::string level)
 {
 	std::string res[4] = {"DEBUG", "INFO", "WARNING", "ERROR"};
-	// function pointer
 	void (Harl::*funcs[4])() = {&Harl::debug, &Harl::info, &Harl::warning, &Harl::error};
 
 	int i;
